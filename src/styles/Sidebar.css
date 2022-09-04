@@ -1,0 +1,70 @@
+.Sidebar {
+    background-color: black;
+    width: 13%;
+    height: 100%;
+    min-width: 200px;
+    color: #b3b3b3;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-left: 25px;
+
+    font-weight: bold;
+    text-align: left;
+}
+
+.Sidebar ul {
+    list-style: none;
+}
+
+.Sidebar a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.Sidebar a:hover {
+    color: white;
+}
+
+.Sidebar hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sidebarLogo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.sidebarLogo svg {
+    margin-right: 10px;
+}
+
+.sidebarMenu svg {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.sidebarTop li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarPlaylists {
+    overflow-y: scroll;
+}
+
+.sidebarPlaylists li {
+    margin-bottom: 15px;
+}

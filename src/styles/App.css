@@ -1,0 +1,29 @@
+.App {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+}

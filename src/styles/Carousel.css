@@ -1,0 +1,43 @@
+.carousel {
+    --carousel-button-height: 30px;
+    margin-bottom: 20px;
+}
+
+.carousel-display {
+    position: relative;
+    height: 200px;
+    margin: 10px 0px;
+}
+
+.carousel-title {
+    font-size: 1.5em;
+    color: white;
+}
+
+.carousel-button-left {
+    position: absolute;
+    top: calc(50% - var(--carousel-button-height) / 2);
+    left: 0;
+
+    height: var(--carousel-button-height);
+}
+
+.carousel-button-right {
+    position: absolute;
+    top: calc(50% - var(--carousel-button-height) / 2);
+    right: 0;
+
+    height: var(--carousel-button-height);
+}
+
+.carousel-children {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.carousel-children img {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,18 @@
+/* Style for the main content on a page */
+.content {
+    background-color: #121212;
+    color: #b3b3b3;
+    width: 87%;
+    height: 100%;
+
+    max-width: 87%;
+    overflow-y: scroll;
+
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.content > div:not(:first-child) {
+    padding-left: 40px;
+    padding-right: 40px;
+}

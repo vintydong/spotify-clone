@@ -1,0 +1,8 @@
+.Footer {
+    background-color: pink;
+
+    width: 100%;
+    min-height: 90px;
+    height: 10%;
+    z-index: 100;
+}
