@@ -16,24 +16,38 @@
 # Table of Contents
 
 -   [About the Project](#star2-about-the-project)
-    -   [Tech Stack](#space_invader-tech-stack)
-    -   [Features](#dart-features)
-    -   [Environment Variables](#key-environment-variables)
--   [Getting Started](#toolbox-getting-started)
-    -   [Prerequisites](#bangbang-prerequisites)
-    -   [Installation](#gear-installation)
-    -   [Run Locally](#running-run-locally)
--   [Usage](#eyes-usage)
--   [Roadmap](#compass-roadmap)
+    -   [Motivation](#motivation)
+    -   [Tech Stack](#tech-stack)
+    -   [Features](#features)
+    -   [Environment Variables](#environment-variables)
+-   [Getting Started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+    -   [Run Locally](#run-locally)
+-   [Usage](#usage)
+-   [Roadmap](#roadmap)
 <!-- About the Project -->
 
 ## About the Project
 
-A better way to edit Spotify playlists
+<div align="center">
+    <img src="./assets/notloggedin.jpg" alt="Logged out" />
+</div>
+<div align="center">
+    <img src="./assets/loggedin.png" alt="Logged in" />
+</div>
+<div align="center">
+    <img src="./assets/libraryview.png" alt="Library View" />
+</div>
+<div align="center">
+    <img src="./assets/playlistview.png" alt="Playlist View" />
+</div>
 
 ### Motivation
 
-This project was created mainly as a way for me to learn React frontend development.
+This project was created mainly as a way for me to learn React frontend development. I tried to imitate the general formatting/style of the Spotify application so as to learn what it's like to develop a popular website using React. It was an intersting challenge for my first time using React. The project allowed me to learn React, states, hooks, and properties.
+
+All components were written by me from scratch but organization and structure of the project was inspired by <a href="https://github.com/JL978/spotify-clone-client">this project</a>
 
 <!-- TechStack -->
 
@@ -121,6 +135,7 @@ Currently, the app can only view playlists that have already been created. To do
 ## Roadmap
 
 -   [x] Export playlists in .txt, .csv
+-   [ ] Rewrite components using Redux
 -   [ ] Create/edit playlists
 -   [ ] Export playlists to other services (e.g. YouTube)
 -   [ ] Import playlists from .txt, .csv
