@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>SpotifyApp</h1>
+  <p>
+    Front-end clone of the Spotify website. This project was created using `create-react-app`. The app should be used with the authentication server <a href="https://github.com/vintydong/spotify-auth-server">here</a>
+  </p>
+   
+<h4>
+    <a href="https://spotify-frontend-92031.herokuapp.com/">View Demo</a>
+</h4>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+<!-- Table of Contents -->
 
-In the project directory, you can run:
+# Table of Contents
 
-### `npm start`
+-   [About the Project](#star2-about-the-project)
+    -   [Tech Stack](#space_invader-tech-stack)
+    -   [Features](#dart-features)
+    -   [Environment Variables](#key-environment-variables)
+-   [Getting Started](#toolbox-getting-started)
+    -   [Prerequisites](#bangbang-prerequisites)
+    -   [Installation](#gear-installation)
+    -   [Run Locally](#running-run-locally)
+-   [Usage](#eyes-usage)
+-   [Roadmap](#compass-roadmap)
+<!-- About the Project -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A better way to edit Spotify playlists
 
-### `npm test`
+### Motivation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was created mainly as a way for me to learn React frontend development.
 
-### `npm run build`
+<!-- TechStack -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<ul>
+    <li><a href="https://reactrouter.com/en/main">React</a></li>
+    <li><a href="https://reactrouter.com/en/main">React Router</a></li>
+    <li><a href="https://axios-http.com/">axios </a></li>
+    <li><a href="https://lokeshdhakar.com/projects/color-thief/">colorthief</a></li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- Features -->
 
-### `npm run eject`
+### Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   View Spotify playlists
+-   Export playlists in `.txt` or `.csv`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Env Variables -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project, you will need to add the following environment variables to your .env file
 
-## Learn More
+`REACT_APP_BACKEND_URL` - link to the backend auth server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- Getting Started -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
 
-### Code Splitting
+<!-- Prerequisites -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
 
-### Analyzing the Bundle Size
+This project uses npm as package manager
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- Installation -->
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install `spotify-clone` with npm
 
-### Advanced Configuration
+```bash
+  npm install spotify-clone
+  cd spotify-clone
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- Run Locally -->
 
-### Deployment
+### Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Clone the project
 
-### `npm run build` fails to minify
+```bash
+  git clone https://github.com/vintydong/spotify-clone.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Go to the project directory
+
+```bash
+  cd spotify-clone
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the application
+
+```bash
+  npm start
+```
+
+<!-- Usage -->
+
+## Usage
+
+Currently, the app can only view playlists that have already been created. To do this, login to Spotify on the home page. The application authenticates via a backend server. Once logged in, it should redirect you to the frontend application with your information loaded. Playlists can be viewed by clicking on them in the sidebar or in the collection page. Playlists can be exported in either .txt or .csv format.
+
+<!-- Roadmap -->
+
+## Roadmap
+
+-   [x] Export playlists in .txt, .csv
+-   [ ] Create/edit playlists
+-   [ ] Export playlists to other services (e.g. YouTube)
+-   [ ] Import playlists from .txt, .csv
+-   [ ] Implement other routes of the website such as Search
